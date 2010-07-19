@@ -1,0 +1,28 @@
+<p>
+  <b>Start:</b>
+  <%=h @festival.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%=h @festival.end %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @festival.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @festival.location %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @festival.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_festival_path(@festival) %> |
+<%= link_to 'Back', festivals_path %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  Category_ID: 1
+  fee: 9.99
+
+two:
+  Category_ID: 1
+  fee: 9.99

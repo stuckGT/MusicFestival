@@ -1,0 +1,24 @@
+<h1>Editing festival_sponsor</h1>
+
+<% form_for(@festival_sponsor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :organization %><br />
+    <%= f.text_field :organization %>
+  </p>
+  <p>
+    <%= f.label :festival_ID %><br />
+    <%= f.text_field :festival_ID %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @festival_sponsor %> |
+<%= link_to 'Back', festival_sponsors_path %>

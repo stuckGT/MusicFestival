@@ -1,0 +1,2 @@
+module SellsAtsHelper
+end

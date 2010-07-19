@@ -1,0 +1,18 @@
+<p>
+  <b>Organization:</b>
+  <%=h @festival_sponsor.organization %>
+</p>
+
+<p>
+  <b>Festival id:</b>
+  <%=h @festival_sponsor.festival_ID %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @festival_sponsor.amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_festival_sponsor_path(@festival_sponsor) %> |
+<%= link_to 'Back', festival_sponsors_path %>

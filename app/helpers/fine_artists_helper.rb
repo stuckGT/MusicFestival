@@ -1,0 +1,2 @@
+module FineArtistsHelper
+end

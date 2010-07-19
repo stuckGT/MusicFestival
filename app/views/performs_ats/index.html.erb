@@ -1,0 +1,22 @@
+<h1>Listing performs_ats</h1>
+
+<table>
+  <tr>
+    <th>Musician name</th>
+    <th>Mestival id</th>
+  </tr>
+
+<% @performs_ats.each do |performs_at| %>
+  <tr>
+    <td><%=h performs_at.musician_Name %></td>
+    <td><%=h performs_at.mestival_ID %></td>
+    <td><%= link_to 'Show', performs_at %></td>
+    <td><%= link_to 'Edit', edit_performs_at_path(performs_at) %></td>
+    <td><%= link_to 'Destroy', performs_at, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New performs_at', new_performs_at_path %>

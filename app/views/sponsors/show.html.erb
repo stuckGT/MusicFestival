@@ -1,0 +1,18 @@
+<p>
+  <b>Organization:</b>
+  <%=h @sponsor.organization %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%=h @sponsor.contact %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @sponsor.telephone %>
+</p>
+
+
+<%= link_to 'Edit', edit_sponsor_path(@sponsor) %> |
+<%= link_to 'Back', sponsors_path %>

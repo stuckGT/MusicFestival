@@ -1,0 +1,24 @@
+<h1>Listing sponsors</h1>
+
+<table>
+  <tr>
+    <th>Organization</th>
+    <th>Contact</th>
+    <th>Telephone</th>
+  </tr>
+
+<% @sponsors.each do |sponsor| %>
+  <tr>
+    <td><%=h sponsor.organization %></td>
+    <td><%=h sponsor.contact %></td>
+    <td><%=h sponsor.telephone %></td>
+    <td><%= link_to 'Show', sponsor %></td>
+    <td><%= link_to 'Edit', edit_sponsor_path(sponsor) %></td>
+    <td><%= link_to 'Destroy', sponsor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sponsor', new_sponsor_path %>

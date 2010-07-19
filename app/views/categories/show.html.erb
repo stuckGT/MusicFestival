@@ -1,0 +1,13 @@
+<p>
+  <b>Category id:</b>
+  <%=h @category.Category_ID %>
+</p>
+
+<p>
+  <b>Fee:</b>
+  <%=h @category.fee %>
+</p>
+
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

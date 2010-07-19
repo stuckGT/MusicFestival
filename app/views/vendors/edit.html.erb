@@ -1,0 +1,36 @@
+<h1>Editing vendor</h1>
+
+<% form_for(@vendor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+  <p>
+    <%= f.label :license %><br />
+    <%= f.text_field :license %>
+  </p>
+  <p>
+    <%= f.label :credit_Type %><br />
+    <%= f.text_field :credit_Type %>
+  </p>
+  <p>
+    <%= f.label :credit_Number %><br />
+    <%= f.text_field :credit_Number %>
+  </p>
+  <p>
+    <%= f.label :category_ID %><br />
+    <%= f.text_field :category_ID %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @vendor %> |
+<%= link_to 'Back', vendors_path %>

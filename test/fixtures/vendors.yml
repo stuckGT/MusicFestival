@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  telephone: MyString
+  license: MyString
+  credit_Type: MyString
+  credit_Number: MyString
+  category_ID: 1
+
+two:
+  name: MyString
+  telephone: MyString
+  license: MyString
+  credit_Type: MyString
+  credit_Number: MyString
+  category_ID: 1

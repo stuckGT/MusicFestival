@@ -1,0 +1,24 @@
+<h1>Listing displays_ats</h1>
+
+<table>
+  <tr>
+    <th>Artist</th>
+    <th>Artist telephone</th>
+    <th>Festival id</th>
+  </tr>
+
+<% @displays_ats.each do |displays_at| %>
+  <tr>
+    <td><%=h displays_at.artist %></td>
+    <td><%=h displays_at.artist_Telephone %></td>
+    <td><%=h displays_at.festival_ID %></td>
+    <td><%= link_to 'Show', displays_at %></td>
+    <td><%= link_to 'Edit', edit_displays_at_path(displays_at) %></td>
+    <td><%= link_to 'Destroy', displays_at, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New displays_at', new_displays_at_path %>

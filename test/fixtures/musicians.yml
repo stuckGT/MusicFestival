@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  genre: MyString
+  performance_Fee: 9.99
+  name: MyString
+  telephone: MyString
+
+two:
+  genre: MyString
+  performance_Fee: 9.99
+  name: MyString
+  telephone: MyString

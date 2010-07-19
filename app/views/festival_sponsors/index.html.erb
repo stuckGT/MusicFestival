@@ -1,0 +1,24 @@
+<h1>Listing festival_sponsors</h1>
+
+<table>
+  <tr>
+    <th>Organization</th>
+    <th>Festival id</th>
+    <th>Amount</th>
+  </tr>
+
+<% @festival_sponsors.each do |festival_sponsor| %>
+  <tr>
+    <td><%=h festival_sponsor.organization %></td>
+    <td><%=h festival_sponsor.festival_ID %></td>
+    <td><%=h festival_sponsor.amount %></td>
+    <td><%= link_to 'Show', festival_sponsor %></td>
+    <td><%= link_to 'Edit', edit_festival_sponsor_path(festival_sponsor) %></td>
+    <td><%= link_to 'Destroy', festival_sponsor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New festival_sponsor', new_festival_sponsor_path %>

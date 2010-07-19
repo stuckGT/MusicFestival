@@ -1,0 +1,33 @@
+<p>
+  <b>Name:</b>
+  <%=h @vendor.name %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @vendor.telephone %>
+</p>
+
+<p>
+  <b>License:</b>
+  <%=h @vendor.license %>
+</p>
+
+<p>
+  <b>Credit type:</b>
+  <%=h @vendor.credit_Type %>
+</p>
+
+<p>
+  <b>Credit number:</b>
+  <%=h @vendor.credit_Number %>
+</p>
+
+<p>
+  <b>Category id:</b>
+  <%=h @vendor.category_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
+<%= link_to 'Back', vendors_path %>

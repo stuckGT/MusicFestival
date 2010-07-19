@@ -1,0 +1,23 @@
+<p>
+  <b>Genre:</b>
+  <%=h @musician.genre %>
+</p>
+
+<p>
+  <b>Performance fee:</b>
+  <%=h @musician.performance_Fee %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @musician.name %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @musician.telephone %>
+</p>
+
+
+<%= link_to 'Edit', edit_musician_path(@musician) %> |
+<%= link_to 'Back', musicians_path %>

@@ -1,0 +1,24 @@
+<h1>Editing displays_at</h1>
+
+<% form_for(@displays_at) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :artist %><br />
+    <%= f.text_field :artist %>
+  </p>
+  <p>
+    <%= f.label :artist_Telephone %><br />
+    <%= f.text_field :artist_Telephone %>
+  </p>
+  <p>
+    <%= f.label :festival_ID %><br />
+    <%= f.text_field :festival_ID %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @displays_at %> |
+<%= link_to 'Back', displays_ats_path %>

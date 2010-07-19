@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  musician_Name: MyString
+  time: 2010-07-18 20:53:41
+  festival_ID: 1
+  stage_ID: 1
+
+two:
+  musician_Name: MyString
+  time: 2010-07-18 20:53:41
+  festival_ID: 1
+  stage_ID: 1

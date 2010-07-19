@@ -1,0 +1,20 @@
+<h1>Editing performs_at</h1>
+
+<% form_for(@performs_at) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :musician_Name %><br />
+    <%= f.text_field :musician_Name %>
+  </p>
+  <p>
+    <%= f.label :mestival_ID %><br />
+    <%= f.text_field :mestival_ID %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @performs_at %> |
+<%= link_to 'Back', performs_ats_path %>

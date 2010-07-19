@@ -1,0 +1,13 @@
+<p>
+  <b>Musician name:</b>
+  <%=h @performs_at.musician_Name %>
+</p>
+
+<p>
+  <b>Mestival id:</b>
+  <%=h @performs_at.mestival_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_performs_at_path(@performs_at) %> |
+<%= link_to 'Back', performs_ats_path %>

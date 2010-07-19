@@ -1,0 +1,26 @@
+<h1>Listing fine_artists</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Home gallery</th>
+    <th>Name</th>
+    <th>Telephone</th>
+  </tr>
+
+<% @fine_artists.each do |fine_artist| %>
+  <tr>
+    <td><%=h fine_artist.category %></td>
+    <td><%=h fine_artist.home_Gallery %></td>
+    <td><%=h fine_artist.name %></td>
+    <td><%=h fine_artist.telephone %></td>
+    <td><%= link_to 'Show', fine_artist %></td>
+    <td><%= link_to 'Edit', edit_fine_artist_path(fine_artist) %></td>
+    <td><%= link_to 'Destroy', fine_artist, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New fine_artist', new_fine_artist_path %>

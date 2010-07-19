@@ -1,0 +1,28 @@
+<h1>Editing musician</h1>
+
+<% form_for(@musician) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :genre %><br />
+    <%= f.text_field :genre %>
+  </p>
+  <p>
+    <%= f.label :performance_Fee %><br />
+    <%= f.text_field :performance_Fee %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :telephone %><br />
+    <%= f.text_field :telephone %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @musician %> |
+<%= link_to 'Back', musicians_path %>

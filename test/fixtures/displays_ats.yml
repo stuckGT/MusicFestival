@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  artist: MyString
+  artist_Telephone: MyString
+  festival_ID: 1
+
+two:
+  artist: MyString
+  artist_Telephone: MyString
+  festival_ID: 1

@@ -1,0 +1,26 @@
+<h1>Listing plays_ons</h1>
+
+<table>
+  <tr>
+    <th>Musician name</th>
+    <th>Time</th>
+    <th>Festival id</th>
+    <th>Stage id</th>
+  </tr>
+
+<% @plays_ons.each do |plays_on| %>
+  <tr>
+    <td><%=h plays_on.musician_Name %></td>
+    <td><%=h plays_on.time %></td>
+    <td><%=h plays_on.festival_ID %></td>
+    <td><%=h plays_on.stage_ID %></td>
+    <td><%= link_to 'Show', plays_on %></td>
+    <td><%= link_to 'Edit', edit_plays_on_path(plays_on) %></td>
+    <td><%= link_to 'Destroy', plays_on, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New plays_on', new_plays_on_path %>

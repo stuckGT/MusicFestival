@@ -1,0 +1,22 @@
+<h1>Listing sells_ats</h1>
+
+<table>
+  <tr>
+    <th>License</th>
+    <th>Festival id</th>
+  </tr>
+
+<% @sells_ats.each do |sells_at| %>
+  <tr>
+    <td><%=h sells_at.license %></td>
+    <td><%=h sells_at.festival_ID %></td>
+    <td><%= link_to 'Show', sells_at %></td>
+    <td><%= link_to 'Edit', edit_sells_at_path(sells_at) %></td>
+    <td><%= link_to 'Destroy', sells_at, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sells_at', new_sells_at_path %>

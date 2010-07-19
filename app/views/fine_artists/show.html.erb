@@ -1,0 +1,23 @@
+<p>
+  <b>Category:</b>
+  <%=h @fine_artist.category %>
+</p>
+
+<p>
+  <b>Home gallery:</b>
+  <%=h @fine_artist.home_Gallery %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @fine_artist.name %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%=h @fine_artist.telephone %>
+</p>
+
+
+<%= link_to 'Edit', edit_fine_artist_path(@fine_artist) %> |
+<%= link_to 'Back', fine_artists_path %>

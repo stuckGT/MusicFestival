@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  musician_Name: MyString
+  mestival_ID: 1
+
+two:
+  musician_Name: MyString
+  mestival_ID: 1

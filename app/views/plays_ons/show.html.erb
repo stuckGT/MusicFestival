@@ -1,0 +1,23 @@
+<p>
+  <b>Musician name:</b>
+  <%=h @plays_on.musician_Name %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @plays_on.time %>
+</p>
+
+<p>
+  <b>Festival id:</b>
+  <%=h @plays_on.festival_ID %>
+</p>
+
+<p>
+  <b>Stage id:</b>
+  <%=h @plays_on.stage_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_plays_on_path(@plays_on) %> |
+<%= link_to 'Back', plays_ons_path %>

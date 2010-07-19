@@ -1,0 +1,20 @@
+<h1>Editing sells_at</h1>
+
+<% form_for(@sells_at) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :license %><br />
+    <%= f.text_field :license %>
+  </p>
+  <p>
+    <%= f.label :festival_ID %><br />
+    <%= f.text_field :festival_ID %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @sells_at %> |
+<%= link_to 'Back', sells_ats_path %>
